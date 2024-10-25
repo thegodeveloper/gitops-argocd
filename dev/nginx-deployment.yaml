@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: argocd-dev
+  labels:
+    app: nginx-test
+  name: nginx-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-test
+  template:
+    metadata:
+      labels:
+        app: nginx-test
+    spec:
+      containers:
+        - image: nginx:latest
+          name: nginx-test
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
