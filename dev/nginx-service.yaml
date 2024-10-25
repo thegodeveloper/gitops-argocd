@@ -13,5 +13,3 @@ spec:
   selector:
     app: nginx-test
   type: LoadBalancer
-status:
-  loadBalancer: {}
