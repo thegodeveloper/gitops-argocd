@@ -16,7 +16,7 @@ spec:
         app: nginx-test
     spec:
       containers:
-        - image: httpd:latest
+        - image: nginx:latest
           name: nginx-test
           ports:
             - containerPort: 80
