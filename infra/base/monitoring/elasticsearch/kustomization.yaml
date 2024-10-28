@@ -8,4 +8,4 @@ helmCharts:
     repo: https://helm.elastic.co
     releaseName: elasticsearch
     namespace: elk
-    valuesFile: elasticsearch-values.yaml
+    valuesFile: values.yaml
