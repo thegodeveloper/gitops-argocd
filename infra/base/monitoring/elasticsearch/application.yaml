@@ -13,10 +13,9 @@ spec:
       releaseName: elasticsearch
       valueFiles:
       - values.yaml
-      - dev-values.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: elk
-  syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
+  #syncPolicy:
+  #  syncOptions:
+  #    - CreateNamespace=true
