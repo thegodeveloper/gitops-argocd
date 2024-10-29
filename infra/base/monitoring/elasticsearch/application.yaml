@@ -15,10 +15,10 @@ spec:
         replicas: 1
         resources:
           requests:
-            cpu: "400m"
+            cpu: "900m"
             memory: "512Mi"
           limits:
-            cpu: "400m"
+            cpu: "900m"
             memory: "512Mi"
   destination:
     server: "https://kubernetes.default.svc"
