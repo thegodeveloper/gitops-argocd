@@ -11,8 +11,15 @@ spec:
     targetRevision: 8.5.1
     helm:
       releaseName: elasticsearch
-      valueFiles:
-        - values.yaml
+      values: |
+        replicas: 1
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "200Mi"
+          limits:
+            cpu: "200m"
+            memory: "200Mi"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: elk
