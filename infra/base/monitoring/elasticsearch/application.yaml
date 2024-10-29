@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: elasticsearch
       values: |
-        replicas: 1
+        replicas: 2
         resources:
           requests:
             cpu: "900m"
