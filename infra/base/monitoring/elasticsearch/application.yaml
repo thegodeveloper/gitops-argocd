@@ -16,6 +16,7 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: elk
-#  syncPolicy:
+  syncPolicy:
+    automated: {}
 #    syncOptions:
 #      - CreateNamespace=true
