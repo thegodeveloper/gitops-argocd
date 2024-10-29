@@ -10,7 +10,7 @@ spec:
     repoURL: https://helm.elastic.co
     targetRevision: 8.5.1
     helm:
-      releaseName: elastic/kibana
+      releaseName: kibana
   destination:
     server: "https://kubernetes.default.svc"
     namespace: elk
