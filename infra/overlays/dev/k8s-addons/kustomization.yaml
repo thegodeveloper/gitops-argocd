@@ -4,3 +4,4 @@ resources:
   - ../../../base/common
   - ../../../base/k8s-addons/nginx-ingress-controller
   - ../../../base/k8s-addons/metrics-server
+  - ../../../base/monitoring/prometheus
