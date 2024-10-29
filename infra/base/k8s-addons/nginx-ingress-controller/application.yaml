@@ -1,18 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: metrics-server
+  name: nginx-ingress-controller
   namespace: argocd
 spec:
   project: default
   source:
-    chart: metrics-server/metrics-server
-    repoURL: https://kubernetes-sigs.github.io/metrics-server
-    targetRevision: 3.12.2
+    chart: bitnami/nginx-ingress-controller
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 11.5.1
     helm:
-      valueFiles:
-        - |-
-            args: {--kubelet-insecure-tls}
+      releaseName: nginx-ingress-controller
   destination:
     server: "https://kubernetes.default.svc"
     namespace: kube-system
