@@ -15,11 +15,11 @@ spec:
         replicas: 2
         resources:
           requests:
-            cpu: "200m"
-            memory: "256Mi"
+            cpu: "400m"
+            memory: "512Mi"
           limits:
-            cpu: "200m"
-            memory: "256Mi"
+            cpu: "400m"
+            memory: "512Mi"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: elk
