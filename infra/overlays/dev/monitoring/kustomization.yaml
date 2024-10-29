@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - ../../../base/monitoring/common
   - ../../../base/monitoring/elasticsearch
-#  - ../../../base/monitoring/kibana
+  - ../../../base/monitoring/kibana
 #  - ../../../base/monitoring/fluentd
 #patches:
 #  - path: elasticsearch-values.yaml
