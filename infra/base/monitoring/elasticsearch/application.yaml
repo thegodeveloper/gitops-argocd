@@ -16,10 +16,10 @@ spec:
         resources:
           requests:
             cpu: "900m"
-            memory: "512Mi"
+            memory: "1Gi"
           limits:
             cpu: "900m"
-            memory: "512Mi"
+            memory: "1Gi"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: elk
