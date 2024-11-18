@@ -9,6 +9,6 @@ helmCharts:
     repo: https://github.com/thegodeveloper/gd-charts.git
     version: main
     includeCRDs: false
-    additionalValuesFiles:
-      - ../../values/default.yaml
-      - ../../values/do-nyc1-devops.yaml
+    #additionalValuesFiles:
+    #  - ../../values/default.yaml
+    #  - ../../values/do-nyc1-devops.yaml
