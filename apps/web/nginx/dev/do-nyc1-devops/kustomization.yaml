@@ -1,0 +1,12 @@
+resources:
+  - ../base
+namespace: nginx
+helmCharts:
+  - name: nginx-chart
+    releaseName: nginx-chart
+    repo: https://github.com/thegodeveloper/gd-charts.git
+    version: main
+    includeCRDs: false
+    additionalValuesFiles:
+      - ../../values/default.yaml
+      - ../../values/do-nyc1-devops.yaml

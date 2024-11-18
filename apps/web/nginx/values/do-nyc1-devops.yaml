@@ -1,0 +1,4 @@
+replicaCount: 3
+resources: {}
+service:
+  type: LoadBalancer
