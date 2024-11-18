@@ -4,7 +4,7 @@ namespace: nginx
 helmCharts:
   - name: nginx-chart
     releaseName: nginx-chart
-    repo: https://github.com/thegodeveloper/gd-charts.git
+    repo: https://thegodeveloper.github.io/gd-charts
     version: main
     includeCRDs: false
     additionalValuesFiles:
