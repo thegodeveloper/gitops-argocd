@@ -1,8 +1,6 @@
 resources:
   - ../base
 namespace: nginx
-helmGlobals:
-  chartHome: nginx-chart
 helmCharts:
   - name: nginx-chart
     releaseName: nginx-chart
